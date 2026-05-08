@@ -1,0 +1,21 @@
+[project]
+name = "sentiment-es"
+version = "0.1.0"
+description = "Fine-tuned BETO (Spanish BERT) for 3-class sentiment analysis on Spanish tweets"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+    "datasets>=2.19.0",
+    "evaluate>=0.4.0",
+    "scikit-learn>=1.3.0",
+    "matplotlib>=3.8.0",
+    "numpy>=1.24.0",
+]
+
+[project.scripts]
+sentiment-predict = "inference:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"

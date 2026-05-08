@@ -35,8 +35,12 @@ def predict(text: str) -> dict:
     }
 
 
-if __name__ == "__main__":
+def main() -> None:
     texts = sys.argv[1:] or ["Me encanta este producto", "El servicio fue pesimo"]
     for t in texts:
         r = predict(t)
         print(f"{t[:50]:<52} {r['label']:<12} {r['confidence']:.3f}")
+
+
+if __name__ == "__main__":
+    main()

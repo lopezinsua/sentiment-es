@@ -5,3 +5,6 @@ __pycache__/
 .env
 *.egg-info/
 .ipynb_checkpoints/
+confusion_matrix.png
+loss_curve.png
+metrics.json
