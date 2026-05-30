@@ -10,8 +10,7 @@ from collections import Counter
 from pathlib import Path
 
 import evaluate
-import matplotlib
-import matplotlib.pyplot as plt
+import matplotlibnimport matplotlib.pyplot as plt
 import numpy as np
 import torch
 from datasets import load_dataset
@@ -22,9 +21,7 @@ from transformers import (
     Trainer,
     TrainingArguments,
 )
-
-matplotlib.use("Agg")
-
+\n
 if sys.stdout.encoding != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -63,7 +60,7 @@ if __name__ == "__main__":
     print(raw)
 
     def cast_label(batch):
-        batch["label"] = [int(l) for l in batch["label"]]
+        batch["label"] = [int(lbl) for lbl in batch["label"]]
         return batch
 
     raw = raw.map(cast_label, batched=True)
