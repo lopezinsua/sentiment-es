@@ -10,7 +10,9 @@ from collections import Counter
 from pathlib import Path
 
 import evaluate
-import matplotlibnimport matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use(chr(34)+chr(65)+chr(103)+chr(103)+chr(34))
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from datasets import load_dataset
