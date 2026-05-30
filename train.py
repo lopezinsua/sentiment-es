@@ -11,7 +11,7 @@ from pathlib import Path
 
 import evaluate
 import matplotlib
-matplotlib.use(chr(34)+chr(65)+chr(103)+chr(103)+chr(34))
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
